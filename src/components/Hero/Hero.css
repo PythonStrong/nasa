@@ -1,0 +1,91 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+.textCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px; /* Standard width */
+    border: 1px dotted white;
+    padding: 10px;
+}
+
+.textCard h3 {
+    font-size: 14px; /* Font size for h3 */
+}
+
+.textCard h2 {
+    font-size: 16px; /* Font size for h2 */
+}
+
+.TextsCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Gap between text cards */
+    flex-wrap: wrap; /* Add this to wrap on smaller screens */
+}
+
+.heroCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 52px; /* Font size for title */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .TextsCard {
+        flex-direction: column; /* Change to column on smaller screens */
+        gap: 20px; /* Reduce gap */
+    }
+    
+    .textCard {
+        width: 300px; /* Decrease width for smaller screens */
+    }
+
+    .title {
+        font-size: 40px; /* Decrease title font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .TextsCard {
+        gap: 10px; /* Further reduce gap */
+        justify-content: center; /* Center text cards on smaller screens */
+    }
+
+    .textCard {
+        width: 100%; /* Full width for text cards */
+        max-width: 350px; /* Set a max-width for large screens */
+    }
+
+    .textCard h3 {
+        font-size: 12px; /* Reduce h3 font size */
+    }
+
+    .textCard h2 {
+        font-size: 14px; /* Reduce h2 font size */
+    }
+
+    .title {
+        font-size: 32px; /* Decrease title font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .textCard {
+        width: 90%; /* Almost full width for mobile */
+        padding: 5px; /* Reduce padding for mobile */
+    }
+
+    .title {
+        font-size: 24px; /* Smaller title font size */
+    }
+}

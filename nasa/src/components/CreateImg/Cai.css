@@ -1,0 +1,96 @@
+.cai {
+  height: 60vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding: 20px;
+  gap: 70px;
+  margin-top: 80px;
+}
+
+.formCai {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+}
+.formCai input {
+  flex: 1;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 550px !important;
+  height: 0px !important;
+  margin: 5px;
+}
+
+.formCai input:active {
+    border:  3px white solid !important;  
+}
+
+.formCai input:hover {
+    margin: 0px;
+  border:  3px white solid !important;  
+}
+
+.formCai button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.formCai button:hover {
+  background-color: #1d4ed8;
+}
+
+.cai img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cai img:hover {
+  transform: scale(1.05);
+}
+
+body {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-container {
+    display: flex;
+    gap: 10px; 
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.tab {
+    border: 2px solid black;
+    border-radius: 25px; /* Oval ko'rinish */
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab.active {
+    background-color: black; /* Tanlangan tabning orqa fon rangi */
+    color: white; /* Tanlangan tabning matn rangi */
+    border-color: white !important; /* Tanlangan tabning chet rangi */
+}

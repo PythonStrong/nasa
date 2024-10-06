@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+  /* background-image: url(https://science.nasa.gov/wp-content/uploads/2024/10/hubble-ngc4694-potw2440a.jpg?w=2048&format=webp); */
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
